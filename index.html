@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="home">
 
         <div class="principal">
             <div class="line" id="line1"></div>
@@ -30,28 +30,28 @@
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Daniela Bursi</p>
-                <button>Saiba mais</button>
+                <a href="#sessao-conhecimentos"><button>Saiba Mais</button></a>
             </div>
         </header>
 
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#pg1" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#sessao-conhecimentos" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#sessao-projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#sessao-contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#sessao-orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://contate.me/DanielaBursi"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://github.com/DanielaBursi"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/daniela-bursi-256547194/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://contate.me/DanielaBursi" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/DanielaBursi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/danielabursi/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos">
+        <section id="sessao-conhecimentos" class="sessao-conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -124,9 +124,140 @@
                 </div>
                 <div class="conhecimentos-img-wrapper">
                     <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
-                </div>  
+                </div>
             </div>
         </section>
+
+        <section id="sessao-projetos" class="sessao-projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+
+            <div class="projetos" id="sessao-projeto">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/proj1.jpg" alt="imagem do projeto Pagina web">
+                    </div>
+                    <div class="card-info">
+                        <h2>Pagina Web</h2>
+                        <h3>HTML, CSS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, et dolor. Eaque doloremque
+                            expedita a, laudantium tempore, blanditiis iusto ea quam eligendi harum quasi maiores. Illum
+                            suscipit nemo nobis quos.</p>
+
+                        <a href="https://github.com/DanielaBursi/Site" target="_blank">
+                            <button class="btn">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/proj2.jpg" alt="Imagem do projeto Calculadora">
+                    </div>
+                    <div class="card-info">
+                        <h2>Calculadora</h2>
+                        <h3>HTML, CSS, JAVASCRIPT</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error blanditiis labore dignissimos
+                            accusamus debitis, corrupti aliquam non dolor voluptatum enim, odio repudiandae laboriosam
+                            tempore culpa neque alias pariatur porro sit.</p>
+                        <a href="https://github.com/DanielaBursi/Calculadora" target="_blank">
+                            <button class="btn">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/bg1.jpg" alt="Imagem do projeto Casa Bela">
+                    </div>
+                    <div class="card-info">
+                        <h2>Portfólio</h2>
+                        <h3>HTML, CSS, JAVASCRIPT</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, molestias esse
+                            consequuntur, excepturi consectetur minima id sunt veniam aliquam amet nostrum ducimus fugit
+                            velit! Possimus beatae ab sint aperiam</p>
+                        <a href="https://github.com/DanielaBursi/portifolio" target="_blank">
+                            <button class="btn">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="sessao-contato" id="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form method="post" action="mailto:danielabursi@gmail.com">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-orcamento" id="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://contate.me/DanielaBursi" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://github.com/DanielaBursi" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/danielabursi/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
     </div>
 </body>
