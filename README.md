@@ -1,6 +1,6 @@
 # portifolio
 
-Potfolio desenvolvido em HTML/CSS/JAVASCRIPT
+Portfolio desenvolvido em HTML/CSS/JAVASCRIPT
 
 ## tarefas
 
